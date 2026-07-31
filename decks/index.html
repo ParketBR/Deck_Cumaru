@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <base href="../">
+  <title>Parket — Decks Cumaru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://parket.com.br">
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preload" as="image" href="decks/autoload/Hero.webp">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script src="assets/js/components.js?v=2"></script>
+  <parket-seo is-main></parket-seo>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          borderRadius: { "DEFAULT": "0", "lg": "0", "xl": "0", "full": "9999px" },
+          colors: { "surface": "#131313", "background": "#000000", "primary": "#ffffff" },
+          fontFamily: { "headline": ["Inter", "Segoe UI Variable Display", "Segoe UI", "system-ui", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Arial", "sans-serif"], "body": ["Inter", "Segoe UI Variable Text", "Segoe UI", "system-ui", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Arial", "sans-serif"], "label": ["Inter", "Segoe UI Variable Text", "Segoe UI", "system-ui", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Arial", "sans-serif"] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="catalogo.css?v=5">
+</head>
+
+<body class="antialiased selection:bg-white selection:text-black">
+
+  <parket-nav return-url="index.html" return-text=""></parket-nav>
+
+  <!-- Side index (right) -->
+  <nav id="side-index" class="side-index" aria-label="Índice"></nav>
+
+  <!-- Floating actions -->
+  <button id="floating-search" class="floating-action" type="button" aria-label="Buscar">
+    <span class="material-symbols-outlined">search</span>
+  </button>
+  <button id="back-to-top" class="floating-action" type="button" aria-label="Voltar ao topo">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </button>
+
+  <!-- ─── HERO ─── -->
+  <section id="hero-viewport">
+    <div id="hero-sticky">
+      <div id="hero-bg" style="background-image: url('autoload/Hero.webp');"></div>
+      <div id="hero-content" class="text-center">
+        <span class="font-label uppercase tracking-[0.6em] text-[15px] text-white/50">Coleção 2026</span>
+      </div>
+      <img decoding="async" src="logo-parket.webp" alt="Parket" class="absolute top-6 left-1/2 -translate-x-1/2 h-4 md:h-5 w-auto opacity-80 z-10">
+      <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-50">
+        <span class="font-label text-[11px] uppercase tracking-[0.4em]">Scroll</span>
+        <div class="w-[1px] h-12 bg-gradient-to-b from-white to-transparent"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROCESSO PARKET (5 pilares) ─── -->
+  <section id="processo" class="processo-section">
+    <div class="processo-wrap">
+      <header class="processo-header fade-up">
+        <span class="eyebrow">Processo</span>
+        <h2 class="display-title text-[clamp(2rem,4.5vw,3.5rem)] mt-4 mb-2 text-white/85">O método Parket</h2>
+        <p class="text-white/55 font-light max-w-xl mt-4 text-base md:text-lg leading-relaxed">
+          Cinco decisões que separam um deck de madeira de um deck Parket.
+        </p>
+      </header>
+
+      <article class="processo-pillar fade-up">
+        <span class="processo-num">01</span>
+        <div class="processo-illustration" aria-hidden="true">
+          <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="12" y="56" width="96" height="14" pathLength="1" data-anim/>
+            <path d="M16 60 L104 60" stroke-opacity="0.4" pathLength="1" data-anim data-delay="2"/>
+            <path d="M16 64 L104 64" stroke-opacity="0.3" pathLength="1" data-anim data-delay="3"/>
+            <path d="M16 68 L104 68" stroke-opacity="0.4" pathLength="1" data-anim data-delay="4"/>
+            <path d="M12 44 L108 44" pathLength="1" data-anim data-delay="5"/>
+            <path d="M12 41 L12 47" pathLength="1" data-anim data-delay="5"/>
+            <path d="M108 41 L108 47" pathLength="1" data-anim data-delay="5"/>
+            <text x="60" y="40" text-anchor="middle" fill="currentColor" stroke="none" font-size="6" letter-spacing="1.5">4 — 8 M</text>
+            <path d="M114 56 L114 70" pathLength="1" data-anim data-delay="6"/>
+            <path d="M111 56 L117 56" pathLength="1" data-anim data-delay="6"/>
+            <path d="M111 70 L117 70" pathLength="1" data-anim data-delay="6"/>
+          </svg>
+        </div>
+        <div class="processo-content">
+          <h3 class="processo-title">Dimensão</h3>
+          <p class="processo-text">Réguas de <strong>30 a 40 cm de largura</strong> e <strong>4 a 8 metros de comprimento</strong>. Tábua larga: menos emendas, paginação valorizada, proporção mantida em projetos de grande porte.</p>
+        </div>
+      </article>
+
+      <article class="processo-pillar fade-up">
+        <span class="processo-num">02</span>
+        <div class="processo-illustration" aria-hidden="true">
+          <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M60 20 L42 44 L78 44 Z" pathLength="1" data-anim/>
+            <path d="M60 36 L36 60 L84 60 Z" pathLength="1" data-anim data-delay="1"/>
+            <path d="M60 52 L30 78 L90 78 Z" pathLength="1" data-anim data-delay="2"/>
+            <rect x="56" y="78" width="8" height="14" pathLength="1" data-anim data-delay="3"/>
+            <circle cx="22" cy="100" r="1.5" pathLength="1" data-anim data-delay="4"/>
+            <circle cx="34" cy="100" r="1.5" pathLength="1" data-anim data-delay="4"/>
+            <circle cx="46" cy="100" r="1.5" pathLength="1" data-anim data-delay="5"/>
+            <circle cx="58" cy="100" r="1.5" pathLength="1" data-anim data-delay="5"/>
+            <circle cx="70" cy="100" r="1.5" pathLength="1" data-anim data-delay="6"/>
+            <circle cx="82" cy="100" r="1.5" pathLength="1" data-anim data-delay="6"/>
+            <circle cx="94" cy="100" r="1.5" pathLength="1" data-anim data-delay="7"/>
+            <circle cx="106" cy="100" r="1.5" pathLength="1" data-anim data-delay="7"/>
+          </svg>
+        </div>
+        <div class="processo-content">
+          <h3 class="processo-title">Seleção da madeira</h3>
+          <p class="processo-text"><strong>8 florestas próprias</strong> no Brasil, Bolívia e Peru. <strong>54 anos de manejo</strong> documentado, sem passivo ambiental. Nenhuma espécie entra na linha sem aprovação técnica.</p>
+        </div>
+      </article>
+
+      <article class="processo-pillar fade-up">
+        <span class="processo-num">03</span>
+        <div class="processo-illustration" aria-hidden="true">
+          <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 38 Q40 35 60 38 T108 38" stroke-opacity="0.3" pathLength="1" data-anim/>
+            <path d="M12 50 Q40 47 60 50 T108 50" stroke-opacity="0.3" pathLength="1" data-anim data-delay="1"/>
+            <path d="M12 62 Q40 59 60 62 T108 62" stroke-opacity="0.3" pathLength="1" data-anim data-delay="2"/>
+            <path d="M12 74 Q40 71 60 74 T108 74" stroke-opacity="0.3" pathLength="1" data-anim data-delay="3"/>
+            <path d="M12 86 Q40 83 60 86 T108 86" stroke-opacity="0.3" pathLength="1" data-anim data-delay="4"/>
+            <g class="lupa-glass" style="transform-box: fill-box; transform-origin: center;">
+              <circle cx="64" cy="62" r="24" pathLength="1" data-anim data-delay="5"/>
+              <line x1="82" y1="80" x2="98" y2="96" pathLength="1" data-anim data-delay="6"/>
+              <path d="M48 58 Q60 56 80 58" stroke-opacity="0.75" pathLength="1" data-anim data-delay="7"/>
+              <path d="M48 66 Q60 64 80 66" stroke-opacity="0.75" pathLength="1" data-anim data-delay="7"/>
+            </g>
+          </svg>
+        </div>
+        <div class="processo-content">
+          <h3 class="processo-title">Curadoria da lâmina</h3>
+          <p class="processo-text"><strong>Cada lâmina inspecionada peça a peça</strong> e classificada por veio, nó e recorte. O que não atende ao padrão sai da linha. O que segue, segue como assinatura.</p>
+        </div>
+      </article>
+
+      <article class="processo-pillar fade-up">
+        <span class="processo-num">04</span>
+        <div class="processo-illustration" aria-hidden="true">
+          <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="14" y="42" width="24" height="36" fill="currentColor" fill-opacity="0.12" stroke="none" data-fade/>
+            <rect x="42" y="42" width="24" height="36" fill="currentColor" fill-opacity="0.26" stroke="none" data-fade style="transition-delay: 0.3s"/>
+            <rect x="70" y="42" width="24" height="36" fill="currentColor" fill-opacity="0.42" stroke="none" data-fade style="transition-delay: 0.6s"/>
+            <rect x="14" y="42" width="24" height="36" pathLength="1" data-anim/>
+            <rect x="42" y="42" width="24" height="36" pathLength="1" data-anim data-delay="1"/>
+            <rect x="70" y="42" width="24" height="36" pathLength="1" data-anim data-delay="2"/>
+            <path d="M22 90 L86 90" pathLength="1" data-anim data-delay="3"/>
+            <path d="M82 87 L86 90 L82 93" pathLength="1" data-anim data-delay="4"/>
+            <text x="54" y="102" text-anchor="middle" fill="currentColor" stroke="none" font-size="5" letter-spacing="1.2">LOTE A LOTE</text>
+          </svg>
+        </div>
+        <div class="processo-content">
+          <h3 class="processo-title">Controle de tonalidade</h3>
+          <p class="processo-text"><strong>Cor controlada lote a lote</strong> antes da entrega. Cada projeto recebe réguas compatibilizadas visualmente — continuidade total da paginação, sem surpresas na obra.</p>
+        </div>
+      </article>
+
+      <article class="processo-pillar fade-up">
+        <span class="processo-num">05</span>
+        <div class="processo-illustration" aria-hidden="true">
+          <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="14" cy="60" r="6" pathLength="1" data-anim/>
+            <line x1="20" y1="60" x2="32" y2="60" pathLength="1" data-anim data-delay="1"/>
+            <circle cx="38" cy="60" r="6" pathLength="1" data-anim data-delay="2"/>
+            <line x1="44" y1="60" x2="56" y2="60" pathLength="1" data-anim data-delay="3"/>
+            <circle cx="62" cy="60" r="6" pathLength="1" data-anim data-delay="4"/>
+            <line x1="68" y1="60" x2="80" y2="60" pathLength="1" data-anim data-delay="5"/>
+            <circle cx="86" cy="60" r="6" pathLength="1" data-anim data-delay="6"/>
+            <line x1="92" y1="60" x2="104" y2="60" pathLength="1" data-anim data-delay="7"/>
+            <circle cx="110" cy="60" r="6" pathLength="1" data-anim data-delay="8"/>
+            <text x="14" y="80" text-anchor="middle" fill="currentColor" stroke="none" font-size="4" letter-spacing="0.6">FLORESTA</text>
+            <text x="38" y="80" text-anchor="middle" fill="currentColor" stroke="none" font-size="4" letter-spacing="0.6">FÁBRICA</text>
+            <text x="62" y="80" text-anchor="middle" fill="currentColor" stroke="none" font-size="4" letter-spacing="0.6">ENGENHARIA</text>
+            <text x="86" y="80" text-anchor="middle" fill="currentColor" stroke="none" font-size="4" letter-spacing="0.6">LOGÍSTICA</text>
+            <text x="110" y="80" text-anchor="middle" fill="currentColor" stroke="none" font-size="4" letter-spacing="0.6">OBRA</text>
+          </svg>
+        </div>
+        <div class="processo-content">
+          <h3 class="processo-title">Cadeia integrada</h3>
+          <p class="processo-text">Da floresta ao último encaixe da obra, <strong>tudo sob o mesmo comando</strong>. Fábrica desde 2015, marcenaria desde 2016, <strong>9 arquitetos</strong> técnicos em obra.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ─── ESCOLHA UM PRODUTO ─── -->
+  <section id="products-index" class="index-block">
+    <div class="w-full max-w-screen-xl mx-auto">
+      <span class="eyebrow block mb-10 fade-up">Índice</span>
+      <h2 class="display-title text-[clamp(1.5rem,3vw,2.4rem)] mb-14 text-white/70 fade-up" style="transition-delay: 0.05s">
+        Escolha um produto:
+      </h2>
+      <nav id="products-nav" class="index-list fade-up" style="transition-delay: 0.12s"></nav>
+    </div>
+  </section>
+
+  <!-- ─── PRODUCT SECTIONS (injected) ─── -->
+  <main id="products" class="relative z-10 bg-black"></main>
+
+  <!-- ─── GUIA TÉCNICO ─── -->
+  <section class="relative z-20 bg-black text-white">
+    <div class="px-12 max-w-screen-2xl mx-auto pt-32 pb-32">
+      <div class="border-t border-white/10 pt-16">
+        <span class="eyebrow block mb-6">Guia Técnico</span>
+        <h2 class="display-title text-[clamp(2.5rem,4vw,5rem)] mb-20 max-w-3xl">Madeira, um material vivo</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-20">
+          <div class="flex flex-col gap-20">
+            <div class="fade-up">
+              <div class="w-fit">
+                <div class="flex items-center gap-2 mb-6">
+                  <div class="w-[40.8px] h-[40.8px] md:w-12 md:h-12 rounded-full border border-white/10" style="background:#3a2414;"></div>
+                  <div class="w-[40.8px] h-[40.8px] md:w-12 md:h-12 rounded-full border border-white/10" style="background:#5c3a22;"></div>
+                  <div class="w-[40.8px] h-[40.8px] md:w-12 md:h-12 rounded-full border border-white/10" style="background:#7d5536;"></div>
+                  <div class="w-[40.8px] h-[40.8px] md:w-12 md:h-12 rounded-full border border-white/10" style="background:#9a7758;"></div>
+                  <div class="w-[40.8px] h-[40.8px] md:w-12 md:h-12 rounded-full border border-white/10" style="background:#b69c82;"></div>
+                  <div class="w-[40.8px] h-[40.8px] md:w-12 md:h-12 rounded-full border border-white/10" style="background:#d0bba5;"></div>
+                  <div class="w-[40.8px] h-[40.8px] md:w-12 md:h-12 rounded-full border border-white/10" style="background:#ead8c3;"></div>
+                </div>
+                <div class="flex items-center justify-between text-[8.5px] md:text-[10px] uppercase tracking-[0.3em] text-white/40">
+                  <span>Escuro</span><span>Claro</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="fade-up">
+              <h3 class="font-label uppercase tracking-[0.3em] text-[10px] text-white/50 mb-6 flex items-center gap-2">
+                <span class="w-1 h-1 bg-white/50 rounded-full"></span> Cor
+              </h3>
+              <div class="text-white/50 text-sm font-light leading-relaxed space-y-4 max-w-xl">
+                <p>A cor da madeira vem dos extrativos que ela contém. A exposição ao ar e à luz modifica esses extrativos, transformando a cor original do deck ao longo do tempo. Espécies tropicais, por conterem mais extrativos, evoluem para marrons mais escuros.</p>
+                <p>Iroko e Parket apresentam as mudanças mais intensas — tábuas originalmente semelhantes podem assumir tonalidades distintas. O Teak varia bastante no início mas se uniformiza com o tempo; o Wengé mantém boa estabilidade de cor.</p>
+                <p>Ao ar livre, sol e chuva desgastam a lignina da superfície e toda madeira caminha para o cinza prateado. É um processo de superfície: muda a cor, não a resistência da peça.</p>
+                <p>Para segurar o tom original por mais tempo, o caminho é a manutenção periódica com óleo. Deixar o deck evoluir para a pátina é uma escolha estética, não um defeito.</p>
+              </div>
+            </div>
+
+            <div class="fade-up">
+              <h3 class="font-label uppercase tracking-[0.3em] text-[10px] text-white/50 mb-6 flex items-center gap-2">
+                <span class="w-1 h-1 bg-white/50 rounded-full"></span> Grão Prateado
+              </h3>
+              <div class="text-white/50 text-sm font-light leading-relaxed space-y-4 max-w-xl">
+                <p>Tábuas cortadas em seção radial do tronco apresentam grão reto e reflexos iridescentes — o chamado grão prateado, historicamente valorizado como indicador de qualidade e prestígio.</p>
+                <p>A madeira é um material vivo, influenciado por luz, temperatura, umidade e uso. Além da estética, o grão prateado indica melhor desempenho técnico: estabilidade dimensional e impermeabilidade.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-20">
+            <div class="fade-up">
+              <h3 class="font-label uppercase tracking-[0.3em] text-[10px] text-white/50 mb-6 flex items-center gap-2">
+                <span class="w-1 h-1 bg-white/50 rounded-full"></span> Amostras
+              </h3>
+              <div class="text-white/50 text-sm font-light leading-relaxed space-y-4 max-w-xl">
+                <p>A madeira é um material natural e variegado: cada peça é única. Amostras compostas por poucas tábuas fornecem apenas uma ideia geral do deck, sem representar fielmente todas as nuances e veios.</p>
+                <p>A cor muda com o tempo por exposição à luz e ao ar — um deck recém-instalado pode ter aparência diferente de uma amostra já exposta.</p>
+              </div>
+            </div>
+
+            <div class="fade-up p-10 flex flex-col items-center" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+              <div class="flex items-center gap-12 mb-4 text-2xl">
+                <span>☀️</span><span>🌧️</span>
+              </div>
+              <div class="flex items-center gap-4 w-full">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-white/50 whitespace-nowrap">Clima<br>Seco</span>
+                <svg class="w-2.5 h-2.5 text-white/40 flex-shrink-0" viewBox="0 0 10 10" fill="currentColor"><polygon points="8,1 8,9 2,5"/></svg>
+                <div class="flex-1 h-12" style="background: linear-gradient(to right, #b98862 0%, #d9ab87 50%, #b98862 100%); clip-path: polygon(0 30%, 100% 10%, 100% 90%, 0 70%);"></div>
+                <svg class="w-2.5 h-2.5 text-white/40 flex-shrink-0" viewBox="0 0 10 10" fill="currentColor"><polygon points="2,1 2,9 8,5"/></svg>
+                <span class="text-[10px] uppercase tracking-[0.3em] text-white/50 whitespace-nowrap">Clima<br>Úmido</span>
+              </div>
+              <div class="mt-4 text-[10px] uppercase tracking-[0.3em] text-white/50 flex items-center gap-2">
+                <svg class="w-2 h-2" viewBox="0 0 10 10" fill="currentColor"><polygon points="1,2 9,2 5,8"/></svg>
+                Retração / Dilatação
+                <svg class="w-2 h-2" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,2 9,8 1,8"/></svg>
+              </div>
+            </div>
+
+            <div class="fade-up">
+              <h3 class="font-label uppercase tracking-[0.3em] text-[10px] text-white/50 mb-6 flex items-center gap-2">
+                <span class="w-1 h-1 bg-white/50 rounded-full"></span> Condições Climáticas
+              </h3>
+              <div class="text-white/50 text-sm font-light leading-relaxed space-y-4 max-w-xl">
+                <p>A madeira dilata e retrai conforme a umidade e a temperatura. Num deck isso é permanente: sol, chuva e a variação entre o dia e a noite agem sobre a peça o ano inteiro.</p>
+                <p>Por isso o assentamento prevê frestas entre as réguas, para drenagem e ventilação, e a estrutura precisa ficar afastada do solo, com ar circulando por baixo. Água parada sob o deck é o que mais encurta a vida da madeira.</p>
+                <p>A madeira modificada tolera bem essas condições: por se movimentar menos que a madeira de origem, mantém a integridade mesmo em área molhada e de uso intenso.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Lightbox ─── -->
+  <div id="lightbox">
+    <button class="lb-btn lb-close" onclick="closeLightbox()"><span class="material-symbols-outlined">close</span></button>
+    <button class="lb-btn lb-prev" onclick="lbPrev()"><span class="material-symbols-outlined">chevron_left</span></button>
+    <img decoding="async" id="lightbox-img" src="" alt="Zoom">
+    <button class="lb-btn lb-next" onclick="lbNext()"><span class="material-symbols-outlined">chevron_right</span></button>
+  </div>
+
+  <script>window.PARKET_FILTER = 'decks';</script>
+  <script defer src="catalogo.js"></script>
+</html>
