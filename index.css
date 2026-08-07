@@ -1231,6 +1231,8 @@
   --ink-40: rgba(0, 0, 0, .38);
   --ink-10: rgba(0, 0, 0, .1);
   --accent: #9a6638;
+  /* lavagem quente derivada do accent, para o bloco de fecho */
+  --fecho-bg: rgba(154, 102, 56, .06);
   position: relative;
   z-index: 21;
   background: var(--branco);
@@ -1661,16 +1663,25 @@
   content: "";
   position: absolute;
   left: 0;
-  top: .62em;
-  width: 6px;
-  height: 1px;
-  background: var(--ink-40);
+  top: .58em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
 }
 
-/* Fecho */
+/* Fecho — bloco destacado que encerra a seção */
+#madeiras-tipos .mtipos-fecho {
+  max-width: 54rem;
+  margin: clamp(3rem, 5vw, 4.5rem) 0 0;
+  padding: clamp(1.75rem, 3vw, 2.5rem) clamp(1.75rem, 3.5vw, 2.75rem);
+  background: var(--fecho-bg);
+  border-left: 2px solid var(--accent);
+  border-radius: 3px;
+}
+
 #madeiras-tipos .mtipos-outro {
-  max-width: 44rem;
-  margin: clamp(2.5rem, 4vw, 3.5rem) 0 0;
+  margin: 0;
   font-size: var(--text-body);
   font-weight: 300;
   line-height: 1.75;
