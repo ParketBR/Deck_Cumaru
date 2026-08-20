@@ -1150,7 +1150,7 @@
         // Catálogo exclusivo Cumaru: apenas a textura da espécie.
         // [arquivo em texturas/, nome da linha, descrição]
         const ESPECIES = [
-          ['cumaru', 'Cumaru', 'Nossa homenagem às raízes tropicais. Madeira extremamente resistente, de cor castanho-avermelhada, indicada para projetos que exigem durabilidade e imponência.'],
+          ['cumaru', 'Cumaru', 'Madeira extremamente resistente, de cor castanho-avermelhada, indicada para projetos que exigem durabilidade e imponência.'],
         ];
         const n = ESPECIES.length;
         const pad = (v) => String(v).padStart(2, '0');
@@ -1158,7 +1158,7 @@
         // Monta as imagens empilhadas (crossfade por opacity)
         ESPECIES.forEach(([slug, label], i) => {
           const img = document.createElement('img');
-          img.src = `texturas/${slug}.jpg`;
+          img.src = `texturas/${slug}.webp`;
           img.alt = '';
           img.loading = 'lazy';
           img.decoding = 'async';
@@ -1216,11 +1216,16 @@
           palco.classList.add('is-usado');
         };
 
-        stage.style.setProperty('--texturas-p', '0');
+        // Com uma única espécie não há para onde navegar: as duas setas nascem
+        // desativadas e a dica de arraste sai de cena (o ir() nunca roda, então
+        // ele não teria como ajustar nada disso depois).
+        const unica = n === 1;
+        stage.style.setProperty('--texturas-p', unica ? '1' : '0');
         setas.forEach(b => {
-          if (Number(b.dataset.dir) < 0) b.disabled = true;
+          if (unica || Number(b.dataset.dir) < 0) b.disabled = true;
           b.addEventListener('click', () => ir(idx + Number(b.dataset.dir), Number(b.dataset.dir)));
         });
+        if (unica) { palco.classList.add('is-usado'); wrap.classList.add('texturas-unica'); }
 
         // Catálogo de espécie única: sem navegação. Esconde setas, contador,
         // trilha de progresso e a dica de arrasto — não há para onde ir.
